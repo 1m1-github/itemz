@@ -485,7 +485,7 @@ Many people celebrate birth anniversaries, so even pride in being born is consid
 Relevantly, this entry provides an anchor in time to contextualize the other successes.
             '''),
     const SuccessData(
-        title: 'Wrote independent proof for uncountability and sparsity of the Cantor set', timestamp: 1639681891, tags: ['math', 'research'], description: '''
+        title: 'Wrote independent proof for uncountability and sparsity of the Cantor set', timestamp: 1038771048, tags: ['math', 'research'], description: '''
           In my 2nd year at Humboldt Universität zu Berlin, Prof. Naumann showed us an advanced proof for the uncountability and 0 Lebueque measure of the Cantor set.
           He remarked that he did not know of any elementary proof for this statement and that this was surprising. I took the challenge and produced an elementary proof after 2 months of thinking.
           Prof. Naumann was impressed and decided to co-publish and name the central function used after my name. Before publishing, for due diligence, Prof. Naumann checked whether this proof was really novel.
