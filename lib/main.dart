@@ -1,5 +1,4 @@
-// flutter build web
-// firebase deploy --only hosting
+// flutter build web && firebase deploy --only hosting
 
 import 'package:cv/cv_page.dart';
 import 'package:flutter/material.dart';
