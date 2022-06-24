@@ -177,7 +177,7 @@ class _CVPageState extends ConsumerState<CVPage> {
                     ),
                     SizedBox(height: 20),
                     Text(
-                        'All timestamps above are approximate. All facts above are the persons\' successes, without humility and without exageration. Weaknesses/"failures" are not mentioned.'),
+                        'All timestamps above are approximate. All facts above are the persons\' successes, without humility and without exageration. Weaknesses/"failures" are not mentioned. 2'),
                   ],
                 ),
               )),

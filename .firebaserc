@@ -1,14 +1,5 @@
 {
   "projects": {
-    "default": "app-2i2i"
-  },
-  "targets": {
-    "app-2i2i": {
-      "hosting": {
-        "cv": [
-          "cv-1m1"
-        ]
-      }
-    }
+    "default": "cv-successes"
   }
 }
