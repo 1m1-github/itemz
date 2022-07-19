@@ -13,16 +13,13 @@ class CvKeywordsList extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     var cvProviderModel = ref.watch(cvProvider);
     return Card(
-      color: cvProviderModel.isOpenSuggestionView
-          ? Theme.of(context).cardColor
-          : Theme.of(context).scaffoldBackgroundColor,
+      color: cvProviderModel.isOpenSuggestionView ? Theme.of(context).cardColor : Theme.of(context).scaffoldBackgroundColor,
       elevation: cvProviderModel.isOpenSuggestionView ? 1.0 : 0,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          if (cvProviderModel.keywordList.isNotEmpty)
-            Divider(color: Colors.transparent, height: 4),
+          if (cvProviderModel.keywordList.isNotEmpty) Divider(color: Colors.transparent, height: 4),
           SingleChildScrollView(
             padding: EdgeInsets.symmetric(horizontal: 10),
             scrollDirection: Axis.horizontal,
@@ -30,12 +27,10 @@ class CvKeywordsList extends ConsumerWidget {
               children: List.generate(
                 cvProviderModel.keywordList.length,
                 (index) => InkResponse(
-                  onTap: () => cvProviderModel
-                      .removeInKeywordList(cvProviderModel.keywordList[index]),
+                  onTap: () => cvProviderModel.removeInKeywordList(cvProviderModel.keywordList[index]),
                   child: Container(
                     decoration: BoxDecoration(
-                        color:
-                            Theme.of(context).iconTheme.color?.withOpacity(0.8),
+                        color: Theme.of(context).focusColor,
                         borderRadius: BorderRadius.circular(30)),
                     margin: EdgeInsets.all(4),
                     padding: EdgeInsets.symmetric(horizontal: 10, vertical: 8),
@@ -43,10 +38,7 @@ class CvKeywordsList extends ConsumerWidget {
                       children: [
                         Text(
                           "${cvProviderModel.keywordList[index]}",
-                          style: Theme.of(context)
-                              .textTheme
-                              .bodyText2
-                              ?.copyWith(color: Theme.of(context).cardColor),
+                          style: Theme.of(context).textTheme.bodyText2?.copyWith(color: Theme.of(context).cardColor),
                         ),
                         SizedBox(width: 6),
                         Icon(
@@ -61,8 +53,7 @@ class CvKeywordsList extends ConsumerWidget {
               ),
             ),
           ),
-          if (cvProviderModel.keywordList.isNotEmpty)
-            Divider(color: Colors.transparent, height: 4),
+          if (cvProviderModel.keywordList.isNotEmpty) Divider(color: Colors.transparent, height: 4),
           SuggestionList(cvProviderModel, context),
         ],
       ),
@@ -72,9 +63,7 @@ class CvKeywordsList extends ConsumerWidget {
   Widget SuggestionList(CVProviderModel cvProviderModel, BuildContext context) {
     return AnimatedContainer(
       duration: Duration(milliseconds: 500),
-      height: cvProviderModel.isOpenSuggestionView
-          ? MediaQuery.of(context).size.width * 0.45
-          : 0,
+      height: cvProviderModel.isOpenSuggestionView ? MediaQuery.of(context).size.width * 0.45 : 0,
       child: Card(
         elevation: 0,
         shape: RoundedRectangleBorder(
@@ -87,20 +76,14 @@ class CvKeywordsList extends ConsumerWidget {
             children: List.generate(
               cvProviderModel.keywords.length,
               (index) => InkResponse(
-                onTap: () => cvProviderModel
-                    .addInKeywordList(cvProviderModel.keywords[index]),
+                onTap: () => cvProviderModel.addInKeywordList(cvProviderModel.keywords[index]),
                 child: Container(
-                  decoration: BoxDecoration(
-                      color: Colors.grey[200],
-                      borderRadius: BorderRadius.circular(30)),
+                  decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(30)),
                   margin: EdgeInsets.all(4),
                   padding: EdgeInsets.symmetric(horizontal: 10, vertical: 8),
                   child: Text(
                     "${cvProviderModel.keywords[index]}",
-                    style: Theme.of(context)
-                        .textTheme
-                        .bodyText2
-                        ?.copyWith(color: Colors.black),
+                    style: Theme.of(context).textTheme.bodyText2?.copyWith(color: Colors.black),
                   ),
                 ),
               ),

@@ -23,7 +23,21 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: '1m1',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        appBarTheme: AppBarTheme(
+          backgroundColor: Colors.black,
+        ),
+        primaryColor: Colors.white,
+        backgroundColor: Colors.black,
+        textTheme: Typography.whiteCupertino,
+        focusColor: Color.fromRGBO(212, 45, 121, 1),
+        listTileTheme: ListTileThemeData(
+            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10), side: BorderSide(color: Colors.white)),
+            selectedColor: Colors.amber,
+            selectedTileColor: Colors.blue,
+            tileColor: Colors.black,
+            iconColor: Colors.pink),
+        scaffoldBackgroundColor: Colors.black,
+        cardColor: Colors.black,
       ),
       home: CVPage(),
       debugShowCheckedModeBanner: false,

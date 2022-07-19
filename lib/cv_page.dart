@@ -70,32 +70,15 @@ class _CVPageState extends ConsumerState<CVPage> {
         appBar: AppBar(
           elevation: 0,
           title: InkWell(child: Text('1m1'), onTap: () => launchUrl(Uri.parse('https://twitter.com/1m1_twt'))),
-          backgroundColor: Colors.green,
-          foregroundColor: Colors.blueAccent,
         ),
         body: Container(
           margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
           child: Column(
             children: [
-              // Container(
-              //   // color: Colors.amber,
-              //   child: Row(
-              //     crossAxisAlignment: CrossAxisAlignment.center,
-              //     mainAxisAlignment: MainAxisAlignment.start,
-              //     children: [
-              //       Text(
-              //         "1m1s",
-              //         style: Theme.of(context).textTheme.headline5,
-              //       ),
-              //     ],
-              //   ),
-              // ),
-              // SizedBox(height: 20),
               Row(
                 children: [
                   Expanded(
                     child: TextField(
-                      style: TextStyle(color: Colors.grey.shade900),
                       autofocus: false,
                       controller: _searchController,
                       onSubmitted: (value) {
@@ -104,33 +87,28 @@ class _CVPageState extends ConsumerState<CVPage> {
                         _searchController.clear();
                       },
                       decoration: InputDecoration(
+                        enabledBorder: OutlineInputBorder(borderSide: BorderSide(color: Theme.of(context).focusColor), borderRadius: BorderRadius.circular(1)),
+                        focusedBorder: OutlineInputBorder(borderSide: BorderSide(color: Theme.of(context).focusColor), borderRadius: BorderRadius.circular(1)),
+                        border: OutlineInputBorder(borderSide: BorderSide(color: Theme.of(context).focusColor), borderRadius: BorderRadius.circular(1)),
                         hintText: 'Search keywords',
-                        suffixIcon: _searchController.text.isNotEmpty
-                            ? IconButton(
-                                onPressed: () {
-                                  _searchController.text = '';
-                                  _searchController.clear();
-                                },
-                                iconSize: 20,
-                                icon: Icon(
-                                  Icons.close,
-                                ),
-                              )
-                            : IconButton(icon: Container(), onPressed: null),
-                        filled: true,
                         contentPadding: EdgeInsets.symmetric(vertical: 8, horizontal: 4),
-                        prefixIcon: Icon(Icons.search_rounded),
-                        // suffixIcon: Icon(Icons.mic),
+                        prefixIcon: Icon(Icons.search_rounded, color: Theme.of(context).focusColor),
                       ),
+                      cursorColor: Theme.of(context).focusColor,
                     ),
                   ),
                   SizedBox(width: 6),
-                  RectangleBox(
+                  Container(
+                      child: RectangleBox(
                     radius: 42,
-                    icon: Icon(cvProviderModel.isOpenSuggestionView ? Icons.keyboard_arrow_up_rounded : Icons.keyboard_arrow_down_rounded, size: 20),
+                    icon: Icon(
+                      cvProviderModel.isOpenSuggestionView ? Icons.keyboard_arrow_up_rounded : Icons.keyboard_arrow_down_rounded,
+                      size: 20,
+                      color: Theme.of(context).focusColor,
+                    ),
                     curveRadius: 10,
                     onTap: () => cvProviderModel.openCloseSuggestionView(),
-                  )
+                  )),
                 ],
               ),
               SizedBox(height: 8),
@@ -148,17 +126,15 @@ class _CVPageState extends ConsumerState<CVPage> {
                       primary: false,
                       itemCount: mainList.length,
                       itemBuilder: (BuildContext context, int index) {
-                        Color backgroundColor = index % 2 == 0 ? Color.fromRGBO(223, 239, 223, 1) : Color.fromRGBO(197, 234, 197, 1);
                         return CVWidget(
                           data: mainList[index],
-                          backgroundColor: backgroundColor,
                           index: index,
                         );
                       },
                     ),
                     SizedBox(height: 20),
                     Text(
-                        'All timestamps above are approximate. All facts above are the persons\' successes, without humility and without exageration. Weaknesses/"failures" are not mentioned. 2'),
+                        'All timestamps above are approximate. All facts above are the persons\' successes, without humility and without exageration. Weaknesses/"failures" are not mentioned.'),
                   ],
                 ),
               )),

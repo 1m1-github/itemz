@@ -9,12 +9,10 @@ import '../success.dart';
 class CVWidget extends StatelessWidget {
   const CVWidget({
     required this.data,
-    required this.backgroundColor,
     required this.index,
   });
 
   final SuccessData data;
-  final Color backgroundColor;
   final int index;
 
   @override
@@ -22,13 +20,20 @@ class CVWidget extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 6.0, vertical: 5),
       child: ExpansionTileCard(
+        expandedColor: Theme.of(context).backgroundColor,
         elevation: 4,
         key: key,
-        leading: Icon(Icons.label_important),
-        title: Text(data.title,
-            overflow: TextOverflow.ellipsis, softWrap: true, maxLines: 2),
-        baseColor: backgroundColor,
-        expandedTextColor: Theme.of(context).colorScheme.secondary,
+        trailing: Icon(
+          Icons.expand_more,
+          color: Theme.of(context).focusColor,
+        ),
+        leading: Icon(
+          Icons.label_important,
+          color: Theme.of(context).focusColor,
+        ),
+        title: Text(data.title, overflow: TextOverflow.ellipsis, softWrap: true, maxLines: 2),
+        baseColor: Theme.of(context).backgroundColor,
+        expandedTextColor: Theme.of(context).textTheme.bodyMedium!.color,
         children: <Widget>[
           Divider(
             thickness: 1.0,
@@ -50,8 +55,7 @@ class CVWidget extends StatelessWidget {
                     style: new TextStyle(color: Colors.blue),
                     recognizer: new TapGestureRecognizer()
                       ..onTap = () {
-                        final dt = new DateTime.fromMillisecondsSinceEpoch(
-                            data.timestamp * 1000);
+                        final dt = new DateTime.fromMillisecondsSinceEpoch(data.timestamp * 1000);
                         final DateFormat formatter = DateFormat('yyyy-MM-dd');
                         final String formatted = formatter.format(dt);
                         showToast(
@@ -81,22 +85,12 @@ class CVWidget extends StatelessWidget {
                   (index) => Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 2),
                         child: Container(
-                          decoration: BoxDecoration(
-                              color: Theme.of(context)
-                                  .iconTheme
-                                  .color
-                                  ?.withOpacity(0.8),
-                              borderRadius: BorderRadius.circular(30)),
-                          padding:
-                              EdgeInsets.symmetric(horizontal: 10, vertical: 8),
+                          decoration: BoxDecoration(color: Theme.of(context).iconTheme.color?.withOpacity(0.8), borderRadius: BorderRadius.circular(30)),
+                          padding: EdgeInsets.symmetric(horizontal: 10, vertical: 8),
                           child: Text(
                             "#${data.tags![index]}",
-                            style: Theme.of(context)
-                                .textTheme
-                                .overline
-                                ?.copyWith(color: Theme.of(context).cardColor),
+                            style: Theme.of(context).textTheme.overline?.copyWith(color: Theme.of(context).cardColor),
                           ),
-                          // backgroundColor: Theme.of(context).iconTheme.color,
                         ),
                       )),
             ),
