@@ -11,33 +11,6 @@ class CVProviderModel extends ChangeNotifier {
 
   // IMI
   static List<SuccessData> imiSuccesses = [
-    const SuccessData(
-        title: 'Encode Algorand Accelerator',
-        timestamp: 1636934400,
-        tags: [
-          'Algorand',
-          'Encode',
-          '2i2i',
-        ],
-        description: '''
-Using the accelerator, we matured the concept of 2i2i and released the test version on the Algorand testnet (test.2i2i.app).
-We believe that we have developed an efficient market system to allow everyone in the world to realise their true value.
-We are working on the patent and on bringing the app to mainnet and to release a governance token and to offer a fiat on-ramp.
-'''),
-    const SuccessData(
-        title: 'Encode Algorand Hackathon',
-        timestamp: 1633500600,
-        tags: [
-          'Algorand',
-          'Encode',
-          '2i2i',
-          'award',
-        ],
-        description: '''
-Encode is an organisation that helps with the adoption of blockchains by running courses and hackathons.
-It felt like the ideal framework to try to implement a project that I wanted to pursue: 2i2i, the place to hang out based on Algorand.
-After intense weeks of hard work, we delivered the project very last minute and succeeded in making it into the finale.
-'''),
     const SuccessData(title: '2i2i.app', timestamp: 1632614400, tags: [
       'Algorand',
       'blockchain',
@@ -48,21 +21,74 @@ After intense weeks of hard work, we delivered the project very last minute and 
       'GCP',
       'market',
       'startup',
+      'Encode',
+      'award',
+      '2i2i'
     ], description: '''
-The place to hangout based on Algorand.
-A blockchain (Algorand) based exchange between energy and information.
-Energy in the form of coins and information in the form of live video meetings.
+2i2i is the idea that everyone has value
 
-The idea is to provide a market for people's time. Everyone has some valuable information to offer.
-This market allows for anyone to talk with anyone else at the fair market rate.
+2i2i allows everyone to earn their value in coins
 
-Includes:
-• A credit-risk-free blockchain-based coin transaction system.
-The users coins are locked in a Smart Contract until the end of the meeting.
-Users can opt-in the system into any Algorand coin, without incurring losses to the system.
-• A WebRTC based end-to-end encrypted and peer-to-peer live video meeting system. Fully private and scalable.
-• A Google Cloud based backend. Serverless, highly scalable, secure.
-• A flutter based frontend, available as a WebApp, Android, iOS and DesktopApp.
+2i2i is market for your time right *now*
+you have *something* to offer ~ the value of it is best measured in a market
+
+share your link with the world and allow the world to offer coins for your time
+if you like the offer, have a live video meeting
+
+*
+on-chain, any coin, private, scalable, zero credit-risk
+*
+
+* on-chain: runs on Algorand, super cheap, fast and safe
+* any coin: any coin of any economic value or even coins of subjective value (e.g. NFTs) (rm)
+* private: your meeting is end-2-end encrypted and peer-2-peer ~ even 2i2i does not see your data
+* scalable: peer-2-peer meetings allow for an efficient network
+* zero credit-risk: coins are locked in an autonomous (rm) smart contract ~ no one can steal them, not even 2i2i
+
+its the uber of talking ~ giving everyone an income stream
+
+=======
+app to be released on Android and iOS
+=======
+
+
+further thoughts:
+set the minimum support you want for your time and watch as the world bids higher or lower to show what your measured value is
+
+you similarly can talk with whomever you want and give them support in coins
+the more valueable it is for you to talk with them, the more you are willing to offer
+there are people in the world that you might love to have a chat with who normally you would not have a chance to chat with
+there are people that are extremely busy but have very valuable advice
+is it worth for them to be on 2i2i ~ yes, of course, because they can transform their very high value into energy in the form of coins
+
+money is an efficient storage of energy
+imagine i expend energy by cleaning someone's garden
+in exchange they give me money
+then, maybe in ten years, i could exchange that money for someone cleaning my pool
+so i exchanged money for energy
+i had energy, i gave away energy and exchanged it for money
+and then i exchanged my money for energy
+and so the money was an as efficient as inflation storage for energy
+and so, someone who is very busy but has valuable advice or is just valuable as a person
+this person can exchange their value into coins and with those coins they buy whatever they want
+point being, since 2i2i is a market, there will be people offering very high amounts for people of very high perceived value
+hence, of course such a person is willing to take that ~ imagine a high celebrity ~ would such a person be willing to talk for 1 million USD per hour with a random fan
+yes, of course, because they could also just talk for 30 seconds and earn 30/(60*60)*1 million USD = ca. 10'000 USD
+
+everyone earns and helps others earn more
+its the uber of talking ~ giving everyone an income stream
+the fairest one ~ according to your market
+
+roadmap
+rm: currently only ALGO is supported ~ all coins coming soon
+rm: currently the smart contract is controlled by 2i2i ~ after it will be controlled by a DAO ~ finally it will be autonomous
+
+
+history
+2i2i was created during a hackathon with encode in 2021 which ended with the first MVP.
+2i2i was accepted into the encode accelerator in 2022 which ended in refined testnet dApp.
+2i2i has received an Algorand foundation grant and will soon release the mainnet dApp.
+
 '''),
     const SuccessData(
         title:
@@ -491,6 +517,18 @@ Relevantly, this entry provides an anchor in time to contextualize the other suc
           Prof. Naumann was impressed and decided to co-publish and name the central function used after my name. Before publishing, for due diligence, Prof. Naumann checked whether this proof was really novel.
           It was not; the exact same proof had been published in the 1970s and he had just not heard about it before.
           That maked my proof not novel but still counts as independent research.
+            '''),
+    const SuccessData(
+        title: 'Survivor of 5 kidnappings',
+        timestamp: 468378000,
+        tags: ['trauma', 'mental health', 'survival'],
+        description: '''
+          In my childhood, I have been a victim of 5 kidnapping attempts, 3 of which were successful. I also lived for ca. 6 years as a prisoner.
+          In my opinion, I have dealt with it relatively well, despite suffering from life long depression as a result.
+          The kidnappings very familial, but unfortunately no less dramatic or traumatising. Events included strangers, criminality, continents, conspiracy and drama.
+          My life as a prisoner, as it turns out, was entirely in my head though. The experience was geniune and full of fear, but in actuality, I just 'never' talked and it was assumed that my environment was voluntary.
+          I thought of running to freedom or telling someone everyday for a few years and less in the last years.
+          None the less, though too quietly, I have still lived a good enough life after finding freedom.
             '''),
   ];
 

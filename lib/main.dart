@@ -1,3 +1,5 @@
+// firebase login
+// firebase logout
 // flutter build web && firebase deploy --only hosting
 
 import 'package:cv/cv_page.dart';
