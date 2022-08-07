@@ -31,7 +31,8 @@ class CVWidget extends StatelessWidget {
           Icons.label_important,
           color: Theme.of(context).focusColor,
         ),
-        title: Text(data.title, overflow: TextOverflow.ellipsis, softWrap: true, maxLines: 2),
+        title: Text(data.title,
+            overflow: TextOverflow.ellipsis, softWrap: true, maxLines: 2),
         baseColor: Theme.of(context).backgroundColor,
         expandedTextColor: Theme.of(context).textTheme.bodyMedium!.color,
         children: <Widget>[
@@ -52,10 +53,12 @@ class CVWidget extends StatelessWidget {
                     style: Theme.of(context).textTheme.bodyText2,
                   ),
                   TextSpan(
-                    style: new TextStyle(color: Colors.blue),
+                    style:
+                        new TextStyle(color: Theme.of(context).indicatorColor),
                     recognizer: new TapGestureRecognizer()
                       ..onTap = () {
-                        final dt = new DateTime.fromMillisecondsSinceEpoch(data.timestamp * 1000);
+                        final dt = new DateTime.fromMillisecondsSinceEpoch(
+                            data.timestamp * 1000);
                         final DateFormat formatter = DateFormat('yyyy-MM-dd');
                         final String formatted = formatter.format(dt);
                         showToast(
@@ -85,11 +88,19 @@ class CVWidget extends StatelessWidget {
                   (index) => Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 2),
                         child: Container(
-                          decoration: BoxDecoration(color: Theme.of(context).iconTheme.color?.withOpacity(0.8), borderRadius: BorderRadius.circular(30)),
-                          padding: EdgeInsets.symmetric(horizontal: 10, vertical: 8),
+                          decoration: BoxDecoration(
+                              color: Theme.of(context).indicatorColor,
+                              borderRadius: BorderRadius.circular(30)),
+                          padding:
+                              EdgeInsets.symmetric(horizontal: 10, vertical: 8),
                           child: Text(
                             "#${data.tags![index]}",
-                            style: Theme.of(context).textTheme.overline?.copyWith(color: Theme.of(context).cardColor),
+                            style: Theme.of(context)
+                                .textTheme
+                                .overline
+                                ?.copyWith(
+                                    color: Theme.of(context).cardColor,
+                                    fontWeight: FontWeight.bold),
                           ),
                         ),
                       )),

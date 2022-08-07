@@ -23,6 +23,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: '1m1',
       theme: ThemeData(
+
         appBarTheme: AppBarTheme(
           backgroundColor: Colors.black,
         ),
@@ -38,6 +39,7 @@ class MyApp extends StatelessWidget {
             iconColor: Colors.pink),
         scaffoldBackgroundColor: Colors.black,
         cardColor: Colors.black,
+        indicatorColor: Colors.blue,
       ),
       home: CVPage(),
       debugShowCheckedModeBanner: false,
