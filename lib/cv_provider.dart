@@ -530,10 +530,10 @@ moving to North America is always a challenge. for our kids education, we decide
 we arrived in Canada on the same day that our encode competition started. it was quite tough managing the competition whilst settling into a completely new place.
 after getting the visa, arriving, getting a car, a house, i consider this a success.
             '''),
-    const SuccessData(title: 'Born', timestamp: 373723200, description: '''
-Can being born count as an success or achievement? Considering that birth is a difficult and dangerous process, yes, it can.\n
-Many people celebrate birth anniversaries, so even pride in being born is considered normal.\n
-Relevantly, this entry provides an anchor in time to contextualize the other successes.
+    const SuccessData(title: 'born', timestamp: 373723200, description: '''
+can being born count as an success or achievement? considering that birth is a difficult and dangerous process, yes, it can.\n
+many people celebrate birth anniversaries, so even pride in being born is considered normal.\n
+relevantly, this entry provides an anchor in time to contextualize the other successes.
             '''),
     const SuccessData(
         title:
