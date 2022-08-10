@@ -9,7 +9,7 @@ class CVProviderModel extends ChangeNotifier {
 
   List<SuccessData> mainCvList = [];
 
-  // IMI
+  // 1M1
   static List<SuccessData> imiSuccesses = [
     const SuccessData(title: 'summary', timestamp: 2632614400, tags: [
       'blockchain',
@@ -20,13 +20,11 @@ class CVProviderModel extends ChangeNotifier {
     ], description: '''
 ~ this is for those that would like to work together with me ~
 
-i have 30+ years of computing and math experience. i can code "anything" in any language (given enough time).
+i have 30+ years of computing and math experience.
 
-solving complex problems and learning my way past challenges, is my fav thing to do.
+i enjoy leading or implementing efficient solutions to complex problems.
 
-both leading and implementing efficient solutions is enjoyable for me.
-
-my expertise lies in blockhains, backend systems, mathematical coding, machine learning, trading.
+my expertise is in blockhains, backend systems, mathematical coding, machine learning, mathematical finance.
 
 please click on 1m1 on the top to contact me
 '''),
