@@ -11,6 +11,14 @@ class CVProviderModel extends ChangeNotifier {
 
   // 1M1
   static List<SuccessData> imiSuccesses = [
+    const SuccessData(title: 'languages', timestamp: 2532614400, tags: [
+      'languages'
+    ], description: '''
+  by living and growing up in over 10 countries, across continents and cultures, i have over my life time spoken 11 human languages, with at least basic fluency ~ some i have forgotten and still speak 7 human languages
+  furthermore, i have coded in ca. 30 languages ~ i could code "anything" in any language
+  tip: i have found that to learn a language, one has to simply force oneself to use only that language plus body language ~ beginning with a word, your vocab will increase everyday and you will be fluent within half a year
+  also, learn the word "opposite" in your target language, as it basically doubles your vocab (you know a word X, ask a local "opposite X?")
+'''),
     const SuccessData(title: 'summary and contact', timestamp: 2632614400, tags: [
       'blockchain',
       'AI',
@@ -48,6 +56,8 @@ please click on 1m1 on the top to contact me
       'award',
       '2i2i'
     ], description: '''
+new whitepaper: https://github.com/2i2i/whitepaper
+
 2i2i is the idea that everyone has value
 
 2i2i allows everyone to earn their value in coins
@@ -562,7 +572,7 @@ relevantly, this entry provides an anchor in time to contextualize the other suc
           my life as a prisoner, as it turns out, was entirely in my head though. the experience was geniune and full of fear, but in actuality, i just 'never' talked and it was assumed that my environment was voluntary.
           i thought of running to freedom or telling someone everyday for a few years and less in the last years.
           none the less, though too quietly, I have still lived a good enough life after finding freedom.
-          one of the worst consequences has been the fact that up until ca. my 40th birth anniversary, i have been ashamed of my ability of coding ~ i have been coding since a very young age and always felt like i could code "anything" using any language ~ but, i was always ashamed of this skill and hid it as much as possible ~ crazy!
+          one of the worst consequences has been the fact that up until ca. my 40th birth anniversary, i have been ashamed of my ability of coding ~ i have been coding since a very young age and always felt like i could code "anything" using any language ~ but, i was always ashamed of this skill and hid it as much as possible ~ finally, i asked my wife 'is it weird to be ashamed of being good with computers?' ~ crazy!
             '''),
     const SuccessData(
         title: 'hypnosis for raising self esteem',
