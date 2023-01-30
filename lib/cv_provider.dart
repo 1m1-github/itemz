@@ -34,7 +34,7 @@ github 1m1-github
 
 ~ this is for those that would like to work together with me ~
 
-i have 30+ years of computing and math experience
+i am a polymath with 30+ years of computing and math experience
 
 i enjoy leading or implementing efficient solutions to complex problems
 
