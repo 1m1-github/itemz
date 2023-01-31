@@ -200,6 +200,7 @@ no matter the language chosen, the users could run the models in the Excel front
 • languages supported: C#, Python, julia, VBA.
 • RabbitMQ for messaging
 • Google protobuf for encoding
+• in partnership with Axpo AG, in a team of 3 coders
 '''),
     const SuccessData(
         title: 'fully automated financial trades execution system',
@@ -280,11 +281,11 @@ result: It worked and was used by family members only. Never marketed
         timestamp: 1338508800,
         tags: ['research', 'math', 'portfolio optimisation', 'finance'],
         description: '''
-first we implemented around 10 different models for portfolio optimisation found in white papers and compared their 'quality'.
+first i implemented around 10 different models for portfolio optimisation found in white papers and compared their 'quality'.
 the quality was based on backtested performance of a portfolio of alpha generating strategies.
 i then formulated a novel model for portfolio optimisation. this model was simpler than any that I had found and the 'quality' was significantly higher as well.
 this model has been the basis of multiple successful trading strategies since.
-this model is not published, though I would like to publish it. mot sure about legality, as I formulated this whilst working for a Swiss hedge fund. also, the result might be known by now.
+this model is not published, though I would like to publish it. mot sure about legality, as I formulated this whilst working for a Swiss hedge fund, but outside of work, in my free time. also, the result might be known by now.
 '''),
     const SuccessData(
         title: 'Heston stochastic vol model implemetation',
