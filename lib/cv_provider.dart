@@ -19,29 +19,6 @@ class CVProviderModel extends ChangeNotifier {
   tip: i have found that to learn a language, one has to simply force oneself to use only that language plus body language ~ beginning with a word, your vocab will increase everyday and you will be fluent within half a year
   also, learn the word "opposite" in your target language, as it basically doubles your vocab (you know a word X, ask a local "opposite X?")
 '''),
-    const SuccessData(title: 'summary and contact', timestamp: 2632614400, tags: [
-      'blockchain',
-      'AI',
-      'ML',
-      'coding',
-      'math',
-    ], description: '''
-
-tiktok coming soon...
-twitter 1m1_twt
-linkedin search 'imi kim 2i2i'
-github 1m1-github
-
-~ this is for those that would like to work together with me ~
-
-i am a polymath with 30+ years of computing and math experience
-
-i enjoy leading or implementing efficient solutions to complex problems
-
-my expertise is in blockhains, backend systems, mathematical coding, machine learning, mathematical finance
-
-please click on 1m1 on the top to contact me
-'''),
     const SuccessData(title: '2i2i.app', timestamp: 1632614400, tags: [
       'Algorand',
       'blockchain',
