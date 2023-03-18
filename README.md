@@ -4,4 +4,4 @@ a novel type of cv
 
 all successes of a person are listed
 
-flutter project
+mine is live here: https://1m1.io
