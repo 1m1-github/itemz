@@ -11,7 +11,12 @@ class CVProviderModel extends ChangeNotifier {
 
   // 1M1
   static List<SuccessData> imiSuccesses = [
-    const SuccessData(title: 'languages', timestamp: 2532614400, tags: ['languages'], description: '''
+    const SuccessData(title: 'TA for Numerical Analysis', timestamp: 1051798846, tags: ['math', 'academics'], description: '''
+  i got a job working as a TA (teaching assistant) for the Numerical Analysis course at the Humboldt Universität zu Berlin where i was studying math at the time.
+  this course was mandatory for all students of mathematics. i myself had to still take it. i got the job over other candidates despite not having taken the course because my grades were (near) perfect.
+  i corrected homework, helped students understand and at the end of the semester, i also submitted my own project earning me the credits for the course.
+'''),
+const SuccessData(title: 'languages', timestamp: 2532614400, tags: ['languages'], description: '''
   by living and growing up in over 10 countries, across continents and cultures, i have over my life time spoken 11 human languages, with at least basic fluency ~ some i have forgotten and still speak 7 human languages
   furthermore, i have coded in ca. 30 computer languages and i love learning new technologies 
   tip: i have found that to learn a language, one has to simply force oneself to use only that language plus body language ~ beginning with a word, your vocab will increase everyday and you will be fluent within half a year
