@@ -11,6 +11,9 @@ class CVProviderModel extends ChangeNotifier {
 
   // 1M1
   static List<SuccessData> imiSuccesses = [
+    const SuccessData(title: 'Published FairMarket paper', timestamp: 1684423476, tags: ['economics', 'publication'], description: '''
+  my first publication is an economics one (who would have thought). it describes a generalization of markets yielding traditional markets as special cases, using DLTs. you can find it here: https://zenodo.org/record/7948669
+'''),
     const SuccessData(title: 'TA for Numerical Analysis', timestamp: 1051798846, tags: ['math', 'academics'], description: '''
   i got a job working as a TA (teaching assistant) for the Numerical Analysis course at the Humboldt Universität zu Berlin where i was studying math at the time.
   this course was mandatory for all students of mathematics. i myself had to still take it. i got the job over other candidates despite not having taken the course because my grades were (near) perfect.
@@ -27,8 +30,6 @@ const SuccessData(title: 'languages', timestamp: 2532614400, tags: ['languages']
         timestamp: 1632614400,
         tags: ['Algorand', 'blockchain', 'app', 'WebRTC', 'Flutter', 'dart', 'GCP', 'market', 'startup', 'Encode', 'award', '2i2i'],
         description: '''
-new whitepaper: https://github.com/2i2i/whitepaper
-
 2i2i is the idea that everyone has value
 
 2i2i allows everyone to earn their value in coins
@@ -359,11 +360,11 @@ the trading system that i created has won several awards over the years, includi
 i joined a competition called 'Quiz on Korea'. I managed to (barely) win the Swiss national competition.
 this made me the Swiss representative at the international 'Quiz on Korea' world championships in Seoul. i did not do well at the finals for weird reasons, but still consider it a success to have made it that far.
             '''),
-    const SuccessData(title: 'intercontinental move to Canada', timestamp: 1627862400, tags: ['travel'], description: '''
-moving to North America is always a challenge. for our kids education, we decided to take on this adventure.
-we arrived in Canada on the same day that our encode competition started. it was quite tough managing the competition whilst settling into a completely new place.
-after getting the visa, arriving, getting a car, a house, i consider this a success.
-            '''),
+//     const SuccessData(title: 'intercontinental move to Canada', timestamp: 1627862400, tags: ['travel'], description: '''
+// moving to North America is always a challenge. for our kids education, we decided to take on this adventure.
+// we arrived in Canada on the same day that our encode competition started. it was quite tough managing the competition whilst settling into a completely new place.
+// after getting the visa, arriving, getting a car, a house, i consider this a success.
+//             '''),
     const SuccessData(title: 'born', timestamp: 373723200, description: '''
 can being born count as an success or achievement? considering that birth is a difficult and dangerous process, yes, it can.\n
 many people celebrate birth anniversaries, so even pride in being born is considered normal.\n
