@@ -11,7 +11,7 @@ class CVProviderModel extends ChangeNotifier {
 
   // 1M1
   static List<SuccessData> imiSuccesses = [
-    const SuccessData(title: 'Published FairMarket paper', timestamp: 1684423476, tags: ['economics', 'publication'], description: '''
+    const SuccessData(title: 'published FairMarket paper', timestamp: 1684423476, tags: ['economics', 'publication'], description: '''
   my first publication is an economics one (who would have thought). it describes a generalization of markets yielding traditional markets as special cases, using DLTs. you can find it here: https://zenodo.org/record/7948669
 '''),
     const SuccessData(title: 'TA for Numerical Analysis', timestamp: 1051798846, tags: ['math', 'academics'], description: '''
@@ -26,7 +26,7 @@ const SuccessData(title: 'languages', timestamp: 2532614400, tags: ['languages']
   also, learn the word "opposite" in your target language, as it basically doubles your vocab (you know a word X, ask a local "opposite X?")
 '''),
     const SuccessData(
-        title: '2i2i.app',
+        title: '2i2i',
         timestamp: 1632614400,
         tags: ['Algorand', 'blockchain', 'app', 'WebRTC', 'Flutter', 'dart', 'GCP', 'market', 'startup', 'Encode', 'award', '2i2i'],
         description: '''
@@ -52,10 +52,10 @@ on-chain, any coin, private, scalable, zero credit-risk
 
 its the uber of talking ~ giving everyone an income stream
 
-=======
-app to be released on Android and iOS
-=======
-
+2i2i was created based on a research grant provided by the Algorand Foundation. we completed all milestones of the grant on time (aparently, we were one of the few).
+2i2i was released as an app on Android and iOS, however, Apple later changed its mind and did not allow the app (due to crypto transactions).
+However, people did not end up using the app, due to missing marketing and it turned out that finding simultaneous time is difficult for strangers around the world.
+2i2i is pivoting as FairInbox: using the FairMarket theory, time is valued via text messages.
 
 further thoughts:
 set the minimum support you want for your time and watch as the world bids higher or lower to show what your measured value is
@@ -84,10 +84,6 @@ everyone earns and helps others earn more
 its the uber of talking ~ giving everyone an income stream
 the fairest one ~ according to your market
 
-roadmap
-rm: currently only ALGO is supported ~ all coins coming soon
-rm: currently the smart contract is controlled by 2i2i ~ after it will be controlled by a DAO ~ finally it will be autonomous
-
 
 history
 2i2i was created during a hackathon with encode in 2021 which ended with the first MVP.
@@ -95,7 +91,7 @@ history
 2i2i has received an Algorand foundation grant and will soon release the mainnet dApp.
 
 '''),
-    const SuccessData(title: 'Machine Learning based system to calculate microfinancing credit risk', timestamp: 1575158400, tags: [
+    const SuccessData(title: 'machine Learning based system to calculate microfinancing credit risk', timestamp: 1575158400, tags: [
       'ML',
       'AI',
       'credit risk',
@@ -138,7 +134,7 @@ instead of improving the existing app, i insisted and remade everything from scr
 we received bonus rewards from Axpo beyond the agreed renumeration for this extra ordinary effort.
 '''),
     const SuccessData(
-        title: 'Prophet: A system to run server models in various languages',
+        title: 'Prophet: a system to run server models in various languages',
         timestamp: 1420070400,
         tags: ['protobuf', 'C#', 'python', 'julia', 'VBA', '.NET', 'smart contracts'],
         description: '''
@@ -197,7 +193,7 @@ result: It worked and was used by family members only. Never marketed
 • connected to CQG and IB
             '''),
     const SuccessData(
-        title: 'Novel model for portfolio optimization with significant performance improvement',
+        title: 'novel model for portfolio optimization with significant performance improvement',
         timestamp: 1338508800,
         tags: ['research', 'math', 'portfolio optimisation', 'finance'],
         description: '''
@@ -205,14 +201,14 @@ first i implemented around 10 different models for portfolio optimisation found 
 the quality was based on backtested performance of a portfolio of alpha generating strategies.
 i then formulated a novel model for portfolio optimisation. this model was simpler than any that I had found and the 'quality' was significantly higher as well.
 this model has been the basis of multiple successful trading strategies since.
-this model is not published, though I would like to publish it. mot sure about legality, as I formulated this whilst working for a Swiss hedge fund, but outside of work, in my free time. also, the result might be known by now.
+i am working on the publication here: https://github.com/1m1-github/FairPortfolio.jl
 '''),
     const SuccessData(title: 'Heston stochastic vol model implemetation', timestamp: 1293840000, tags: ['UBS', 'C++', 'Heston', 'math', 'finance'], description: '''
 • implementated and wrote a white paper on a Heston stochastic volatility model to evaluate complex financial products
 • implementated in C++
 • work done for UBS
 '''),
-    const SuccessData(title: 'Centralised Smart contracts', timestamp: 1275350400, tags: ['UBS', 'smart contract', 'math', 'Monte Carlo', 'Lua', 'finance'], description: '''
+    const SuccessData(title: 'centralised Smart contracts', timestamp: 1275350400, tags: ['UBS', 'smart contract', 'math', 'Monte Carlo', 'Lua', 'finance'], description: '''
 having the ability to evaluate arbitraty contracts, based on Monte Carlo simulations was considered a valuable goal at UBS.
 my manager had estimated that this project would require 6 months. since there were always more urgent projects at hand, this project was never green lighted.
 over a weekend, i realised that instead of creating our own smart contract language, we could simply use Lua.
@@ -378,10 +374,10 @@ relevantly, this entry provides an anchor in time to contextualize the other suc
           that made my proof not novel but still counts as independent research.
             '''),
     const SuccessData(title: 'survivor of 5 kidnappings', timestamp: 468378000, tags: ['trauma', 'mental health', 'survival'], description: '''
-          in my childhood, i have been a victim of 5 kidnapping attempts, 3 of which were successful. i also lived for ca. 6 years as a prisoner.
-          in my opinion, i have dealt with it relatively well, despite suffering from almost-life-long depression as a result.
+          in my childhood, i was a victim of 5 kidnapping attempts, 3 of which were successful. i also lived for ca. 6 years as a prisoner.
+          in my opinion, i have dealt with it relatively well, despite suffering from near 4 decade depression as a result, which i overcame in 2022.
           the kidnappings very familial, but unfortunately no less dramatic or traumatising. events included strangers, criminality, continents, conspiracy and drama.
-          my life as a prisoner, as it turns out, was entirely in my head though. the experience was geniune and full of fear, but in actuality, i just 'never' talked and it was assumed that my environment was voluntary.
+          my life as a prisoner, as it turns out, was in my head though. the experience was geniune and full of fear, but in actuality, i just 'never' talked and it was assumed that my environment was voluntary.
           i thought of running to freedom or telling someone everyday for a few years and less in the last years.
           none the less, though too quietly, I have still lived a good enough life after finding freedom.
           one of the worst consequences has been the fact that up until ca. my 40th birth anniversary, i have been ashamed of my ability of coding ~ i have been coding since a very young age and always felt like i could code "anything" using any language ~ but, i was always ashamed of this skill and hid it as much as possible ~ finally, i asked my wife 'is it weird to be ashamed of being good with computers?' ~ crazy!
