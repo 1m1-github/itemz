@@ -211,7 +211,8 @@ i am working on the publication here: https://github.com/1m1-github/FairPortfoli
     const SuccessData(title: 'centralised Smart contracts', timestamp: 1275350400, tags: ['UBS', 'smart contract', 'math', 'Monte Carlo', 'Lua', 'finance'], description: '''
 having the ability to evaluate arbitraty contracts, based on Monte Carlo simulations was considered a valuable goal at UBS.
 my manager had estimated that this project would require 6 months. since there were always more urgent projects at hand, this project was never green lighted.
-over a weekend, i realised that instead of creating our own smart contract language, we could simply use Lua.
+over a weekend, i realised that instead of creating our own smart contract language, we could simply use Lua as the basis to define a contract language.
+the language was flexible enough to replicate any contract with any type of payout.
 the contract written in Lua could be runtime compiled into C and then embedded into our existing C++ Monte Carlo engine.
 insisting on my idea, i implemented this solution in less than 3 days.
 for this valuable contribution, i received monetary renumeration. however, i actually rather wanted renumeration in time.
