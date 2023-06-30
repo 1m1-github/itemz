@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>1m1</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -9,18 +10,45 @@
             border-bottom: 1px solid #ddd;
             padding-bottom: 1em;
         }
+
         .tag {
-            margin-right: .5em;
+            display: inline-flex;
+            align-items: center;
+            padding: 5px 10px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            background-color: #f2f2f2;
+            color: #333;
+            font-size: 14px;
         }
+
         .filter-tag {
-            margin-right: .5em;
-            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            padding: 5px 10px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            background-color: #f2f2f2;
+            color: #333;
+            font-size: 14px;
         }
+
+        .filter-tag .active {
+            margin-left: 10px;
+            cursor: pointer;
+            font-size: 12px;
+            color: #bc1c1c;
+            background-color: #a21818;
+        }
+
         .active {
             color: blue;
         }
     </style>
 </head>
+
 <body>
 
     <div id="items">
@@ -140,12 +168,12 @@ the in-sample and out-sample (live data) result were quite precise.
 evaluating statistics after changing parameters of the model showed results strongly inline with predicted results.
 even though each individual is unique, the portfolio credit risk can be modeled powerfully using Machine Learning.`,
                 tags: ['ML',
-      'AI',
-      'credit risk',
-      'julia',
-      'CRO',
-      'math',
-      'finance',],
+                    'AI',
+                    'credit risk',
+                    'julia',
+                    'CRO',
+                    'math',
+                    'finance',],
             },
             {
                 title: `automated online lending system`,
@@ -598,4 +626,5 @@ it worked extremely well and i have lost all humility since ~ i now openly and a
     </script>
 
 </body>
+
 </html>
