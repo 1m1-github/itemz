@@ -11,6 +11,13 @@ class CVProviderModel extends ChangeNotifier {
 
   // 1M1
   static List<SuccessData> imiSuccesses = [
+    const SuccessData(title: 'published FairInbox', timestamp: 1686635909, tags: ['economics', 'technology'], description: '''
+  finally published the fairest inbox, respectful of people's time, modern. totally decentralized, etc. https://fairinbox.io
+'''),
+    const SuccessData(title: 'spoke at Decipher', timestamp: 1669701479, tags: ['speech', 'economics', 'technology'], description: '''
+  presented my ideas at a largish event, Decipher in Dubai for Algorand. also did so in my hero costume which was somewhat dangerous. and i was totally alone.
+  few people saw my presentation, yet several of those that did congratulated me, took pics, etc. https://youtu.be/NK_b5_ak9JY
+'''),
     const SuccessData(title: 'published FairMarket paper', timestamp: 1684423476, tags: ['economics', 'publication'], description: '''
   my first publication is an economics one (who would have thought). it describes a generalization of markets yielding traditional markets as special cases, using DLTs. you can find it here: https://zenodo.org/record/7948669
 '''),
