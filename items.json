@@ -596,6 +596,80 @@
         tags: ['sociology'],
     },
     {
+        title: `incomputability is practically randomness`,
+        timestamp: ,
+        description: ``,
+        tags: [],
+    },
+    {
+        title: `why science works: reliability`,
+        timestamp: ,
+        description: `
+        * allowed to learn (change mind)
+        * only believe if good reason to believe = only reliable knowledge
+        => leads to reliable results
+        `,
+        tags: ['science', 'philosophy'],
+    },
+    {
+        title: `zero knowledge health`,
+        timestamp: ,
+        description: `
+        * user has private DNA data (list of genes)
+        * provider has private gene to health risk/characterisic db
+        * use zk set intersection on a independent, trustless machine to provide information to user without either compromising private information
+        * massive use case
+        * allow user to voluntarity disclose private info in exchange for energy
+        `,
+        tags: ['technology', 'health', 'zk'],
+    },
+    {
+        title: `best execution strategy in a liquid market is the market order`,
+        timestamp: ,
+        description: `
+        * unless a person specializes in order book optimization
+        * if you believe the trend of the asset is up, then the best time to buy is now and the best order is a market order (assuming a liquid market)
+        * yes, price could decline, but it could also rise; your assumption is a rising trend (sell market order for decreasing trend assumption)
+        `,
+        tags: ['economics'],
+    },
+    {
+        title: ``,
+        timestamp: ,
+        description: ``,
+        tags: [],
+    },
+    {
+        title: ``,
+        timestamp: ,
+        description: ``,
+        tags: [],
+    },
+    {
+        title: ``,
+        timestamp: ,
+        description: ``,
+        tags: [],
+    },
+    {
+        title: ``,
+        timestamp: ,
+        description: ``,
+        tags: [],
+    },
+    {
+        title: ``,
+        timestamp: ,
+        description: ``,
+        tags: [],
+    },
+    {
+        title: ``,
+        timestamp: ,
+        description: ``,
+        tags: [],
+    },
+    {
         title: ``,
         timestamp: ,
         description: ``,
