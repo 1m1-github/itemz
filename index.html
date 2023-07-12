@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>1m1</title>
+    <title>itemz</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
 </head>
 
@@ -17,10 +17,15 @@
         <!-- Filter tags will go here -->
     </div>
 
-    <a href="https://github.com/1m1-github/itemz"><h1>how does this site work?</h1></a>
+    <h1 onclick="https://github.com/1m1-github/itemz">how does this site work?</h1>
 
     <script>
         const params = new URLSearchParams(window.location.search)
+
+        const title = params.get('title')
+        if (title) {
+            document.title = title
+        }
 
         const css_url = params.get('css')
         if (css_url) {

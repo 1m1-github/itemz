@@ -11,6 +11,13 @@
 + items should have unique timestamps
 + each item also has a tag `_${timestamp}` added to be directly linkable
 + tags are filters
++ each _item_ is clickable
++ filters is clickable
++ user supplied title for site
+
+## usage
+
+https://little-unit-4743.on.fleek.co?content=content_url&css=css_url&filters=filter1,filter2&title=mytitle
 
 ## example
 
@@ -25,10 +32,10 @@ https%3A%2F%2Fraw.githubusercontent.com%2F1m1-github%2Fitemz%2Fmain%2Fexample%2F
 https%3A%2F%2Fraw.githubusercontent.com%2F1m1-github%2Fitemz%2Fmain%2Fexample%2Fexample_css.css
 
 now we can supply these urls as parameters to the itemz code:
-http://url?content=https%3A%2F%2Fraw.githubusercontent.com%2F1m1-github%2Fitemz%2Fmain%2Fexample%2Fexample_content.json&css=https%3A%2F%2Fraw.githubusercontent.com%2F1m1-github%2Fitemz%2Fmain%2Fexample%2Fexample_css.css
+https://little-unit-4743.on.fleek.co?content=https%3A%2F%2Fraw.githubusercontent.com%2F1m1-github%2Fitemz%2Fmain%2Fexample%2Fexample_content.json&css=https%3A%2F%2Fraw.githubusercontent.com%2F1m1-github%2Fitemz%2Fmain%2Fexample%2Fexample_css.css
 
 we can add filters if we want to:
-http://url?content=https%3A%2F%2Fraw.githubusercontent.com%2F1m1-github%2Fitemz%2Fmain%2Fexample%2Fexample_content.json&css=https%3A%2F%2Fraw.githubusercontent.com%2F1m1-github%2Fitemz%2Fmain%2Fexample%2Fexample_css.css&filters=a,b
+https://little-unit-4743.on.fleek.co?content=https%3A%2F%2Fraw.githubusercontent.com%2F1m1-github%2Fitemz%2Fmain%2Fexample%2Fexample_content.json&css=https%3A%2F%2Fraw.githubusercontent.com%2F1m1-github%2Fitemz%2Fmain%2Fexample%2Fexample_css.css&filters=a,b
 
 or a specific item filter via its timestamp:
-http://url?content=https%3A%2F%2Fraw.githubusercontent.com%2F1m1-github%2Fitemz%2Fmain%2Fexample%2Fexample_content.json&css=https%3A%2F%2Fraw.githubusercontent.com%2F1m1-github%2Fitemz%2Fmain%2Fexample%2Fexample_css.css&filters=_123920395
+https://little-unit-4743.on.fleek.co?content=https%3A%2F%2Fraw.githubusercontent.com%2F1m1-github%2Fitemz%2Fmain%2Fexample%2Fexample_content.json&css=https%3A%2F%2Fraw.githubusercontent.com%2F1m1-github%2Fitemz%2Fmain%2Fexample%2Fexample_css.css&filters=_123920395
