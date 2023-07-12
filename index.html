@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>1m1</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+
+    <div id="items">
+        <!-- Items will go here -->
+    </div>
+
+    <h1>filters</h1>
+    <div id="filter-tags">
+        <!-- Filter tags will go here -->
+    </div>
+
+    <h1>how does this site work?</h1>
+    <div id="about">
+        <ul>user supplied content as json</ul>
+        <ul>user supplied design as css</ul>
+        <ul>main item in json </ul>
+        <ul>each item has a title, description, timestamp and a list of tags</ul>
+        <ul>see my json as an example: </ul>
+        <ul>timestamps are in epoch (seconds since 1970 UTC)</ul>
+        <ul>items should have unique timestamps</ul>
+        <ul>each item also has a tag `_${timestamp}` added to be directly linkable</ul>
+        <ul>tags are filters</ul>
+    </div>
+
+    <script>
+        const params = new URLSearchParams(window.location.search)
+
+        const css_url = params.get('css')
+        if (css_url) {
+            fetch(css_url)
+                .then(response => response.text())
+                .then(data => {
+                    const style = document.createElement("style")
+                    style.innerHTML = data
+                    document.head.appendChild(style)
+                })
+        }
+
+        const queryFilters = params.get('filters')
+        let filters = queryFilters ? params.get('filters').split(',') : []
+
+        const content_url = params.get('content')
+        let items = []
+        if (content_url) {
+            fetch(content_url)
+                .then(async response => {
+                    return response.json()
+                        .then(data => {
+                            items = data
+                            render()
+                        })
+                })
+        }
+
+        function render() {
+            for (let i = 0; i < items.length; i++) {
+                const item = items[i]
+                item.id = item.timestamp
+                item.tags.push(`_${item.timestamp}`)
+            }
+
+            // render items
+            const itemsDiv = document.getElementById('items');
+            itemsDiv.innerHTML = items
+                .filter(item => filters.length === 0 || filters.every(filter => item.tags.includes(filter)))
+                .sort((a, b) => b.timestamp - a.timestamp)
+                .map(item => `
+                    <div class="item">
+                        <h2 class="title" onclick="toggleItem(${item.id})">${item.title}</h2>
+                        <div hidden class="timestamp" id="timestamp_${item.id}">${item.timestamp}</div>
+                        <p hidden class="description" id="description_${item.id}">${item.description}</p>
+                        <div hidden class="tags" id="tags_${item.id}">
+                            ${item.tags.filter(tag => tag[0] !== '_').map(tag => `<span class="tag ${filters.includes(tag) ? 'active' : ''}" onclick="toggleFilter('${tag}')">${tag}</span>`).join('')}
+                        </div>
+                    </div>
+                `)
+                .join('');
+
+            setFilters()
+        }
+
+        function setFilters() {
+            const tagsDiv = document.getElementById('filter-tags');
+            const filteredItems = items.filter(item => filters.length === 0 || filters.every(filter => item.tags.includes(filter)))
+            const uniqueTags = ['all', ...new Set(filteredItems.flatMap(item => item.tags))];
+
+            // render tags
+            tagsDiv.innerHTML = uniqueTags
+                .filter(tag => tag[0] !== '_')
+                .map(tag => `
+                    <span class="filter-tag ${filters.includes(tag) || tag === 'all' ? 'active' : ''}" onclick="toggleFilter('${tag}')">${tag}</span>
+                `)
+                .join('');
+        }
+
+        function toggleItem(id) {
+            const description = document.getElementById(`description_${id}`)
+            description.hidden = !description.hidden
+            const timestamp = document.getElementById(`timestamp_${id}`)
+            timestamp.hidden = !timestamp.hidden
+            const tags = document.getElementById(`tags_${id}`)
+            tags.hidden = !tags.hidden
+        }
+
+        function toggleFilter(tag) {
+            if (tag === 'all') {
+                filters = []
+            }
+            else if (filters.includes(tag)) {
+                filters = filters.filter(t => t !== tag);
+            } else {
+                filters.push(tag);
+            }
+            render()
+        }
+    </script>
+
+</body>
+
+</html>

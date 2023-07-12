@@ -1,7 +1,5 @@
-# cv
+# bio
 
-a novel type of cv
-
-all successes of a person are listed
+a novel type of bio
 
 mine is live here: https://1m1.io
