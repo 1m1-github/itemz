@@ -1,5 +1,6 @@
 # itemz
 
++ each _item_ consists of a _title_, a _description_, a _timestamp_, and a list of _tags_
 + user supplied content as json
 + user supplied design as css
 + main item in json 
