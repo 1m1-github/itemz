@@ -12,12 +12,12 @@
         <!-- Items will go here -->
     </div>
 
-    <h1 onclick="toggleFilters()">filters</h1>
+    <h1 onclick="toggleFilters()" id="filters_title">filters</h1>
     <div hidden id="filter-tags">
         <!-- Filter tags will go here -->
     </div>
 
-    <h1 onclick="https://github.com/1m1-github/itemz">how does this site work?</h1>
+    <h1 onclick="window.open('https://github.com/1m1-github/itemz', '_blank')" id="about">how does this site work?</h1>
 
     <script>
         const params = new URLSearchParams(window.location.search)
@@ -67,8 +67,8 @@
                 .filter(item => filters.length === 0 || filters.every(filter => item.tags.includes(filter)))
                 .sort((a, b) => b.timestamp - a.timestamp)
                 .map(item => `
-                    <div class="item">
-                        <h2 class="title" onclick="toggleItem(${item.id})">${item.title}</h2>
+                    <div class="item" id="${item.id}">
+                        <h2 class="title" id="title_${item.id}" onclick="toggleItem(${item.id})">${item.title}</h2>
                         <div hidden class="timestamp" id="timestamp_${item.id}">${item.timestamp}</div>
                         <p hidden class="description" id="description_${item.id}">${item.description}</p>
                         <div hidden class="tags" id="tags_${item.id}">
@@ -90,7 +90,7 @@
             tagsDiv.innerHTML = uniqueTags
                 .filter(tag => tag[0] !== '_')
                 .map(tag => `
-                    <span class="filter-tag ${filters.includes(tag) || tag === 'all' ? 'active' : ''}" onclick="toggleFilter('${tag}')">${tag}</span>
+                    <span class="tag ${filters.includes(tag) || tag === 'all' ? 'active' : ''}" onclick="toggleFilter('${tag}')">${tag}</span>
                 `)
                 .join('');
         }

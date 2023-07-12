@@ -16,19 +16,7 @@
     font-size: 14px;
 }
 
-.filter-tag {
-    display: inline-flex;
-    align-items: center;
-    padding: 5px 10px;
-    margin: 5px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    background-color: #f2f2f2;
-    color: #333;
-    font-size: 14px;
-}
-
-.filter-tag .active {
+.tag .active {
     margin-left: 10px;
     cursor: pointer;
     font-size: 12px;
