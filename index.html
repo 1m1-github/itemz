@@ -12,23 +12,12 @@
         <!-- Items will go here -->
     </div>
 
-    <h1>filters</h1>
-    <div id="filter-tags">
+    <h1 onclick="toggleFilters()">filters</h1>
+    <div hidden id="filter-tags">
         <!-- Filter tags will go here -->
     </div>
 
-    <h1>how does this site work?</h1>
-    <div id="about">
-        <ul>user supplied content as json</ul>
-        <ul>user supplied design as css</ul>
-        <ul>main item in json </ul>
-        <ul>each item has a title, description, timestamp and a list of tags</ul>
-        <ul>see my json as an example: </ul>
-        <ul>timestamps are in epoch (seconds since 1970 UTC)</ul>
-        <ul>items should have unique timestamps</ul>
-        <ul>each item also has a tag `_${timestamp}` added to be directly linkable</ul>
-        <ul>tags are filters</ul>
-    </div>
+    <a href="https://github.com/1m1-github/itemz"><h1>how does this site work?</h1></a>
 
     <script>
         const params = new URLSearchParams(window.location.search)
@@ -99,6 +88,11 @@
                     <span class="filter-tag ${filters.includes(tag) || tag === 'all' ? 'active' : ''}" onclick="toggleFilter('${tag}')">${tag}</span>
                 `)
                 .join('');
+        }
+
+        function toggleFilters() {
+            const filters = document.getElementById(`filter-tags`)
+            filters.hidden = !filters.hidden
         }
 
         function toggleItem(id) {

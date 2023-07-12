@@ -1,5 +1,6 @@
 # itemz
 
++ content consists of a list of _item_s
 + each _item_ consists of a _title_, a _description_, a _timestamp_, and a list of _tags_
 + user supplied content as json
 + user supplied design as css
@@ -10,3 +11,6 @@
 + items should have unique timestamps
 + each item also has a tag `_${timestamp}` added to be directly linkable
 + tags are filters
+
+## example
+
