@@ -75,7 +75,7 @@
                 .map(item => `
                     <div class="item">
                         <h2 class="title" onclick="toggleItem(${item.id})">${item.title}</h2>
-                        <a hidden href="${item.url}" class="timestamp" id="timestamp_${item.id}">${item.timestamp}</a>
+                        <div hidden class="timestamp" id="timestamp_${item.id}">${item.timestamp}</div>
                         <p hidden class="description" id="description_${item.id}">${item.description}</p>
                         <div hidden class="tags" id="tags_${item.id}">
                             ${item.tags.filter(tag => tag[0] !== '_').map(tag => `<span class="tag ${filters.includes(tag) ? 'active' : ''}" onclick="toggleFilter('${tag}')">${tag}</span>`).join('')}
