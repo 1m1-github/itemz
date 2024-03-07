@@ -65,7 +65,7 @@
             const itemsDiv = document.getElementById('items');
             itemsDiv.innerHTML = items
                 .filter(item => filters.length === 0 || filters.every(filter => item.tags.includes(filter)))
-                .sort((a, b) => a.timestamp - b.timestamp)
+                .sort((a, b) => b.timestamp - a.timestamp)
                 .map(item => `
                     <div class="item" id="${item.id}">
                         <h2 class="title" id="title_${item.id}" onclick="toggleItem(${item.id})">${item.title}</h2>
