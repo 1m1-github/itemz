@@ -17,7 +17,7 @@
 
 ## usage
 
-https://little-unit-4743.on.fleek.co?content=content_url&css=css_url&filters=filter1,filter2&title=mytitle
+https://faint-area-old.on-fleek.app?content=content_url&css=css_url&filters=filter1,filter2&title=mytitle
 
 ## example
 
@@ -32,10 +32,10 @@ https%3A%2F%2Fraw.githubusercontent.com%2F1m1-github%2Fitemz%2Fmain%2Fexample%2F
 https%3A%2F%2Fraw.githubusercontent.com%2F1m1-github%2Fitemz%2Fmain%2Fexample%2Fexample_css.css
 
 now we can supply these urls as parameters to the itemz code:
-https://little-unit-4743.on.fleek.co?content=https%3A%2F%2Fraw.githubusercontent.com%2F1m1-github%2Fitemz%2Fmain%2Fexample%2Fexample_content.json&css=https%3A%2F%2Fraw.githubusercontent.com%2F1m1-github%2Fitemz%2Fmain%2Fexample%2Fexample_css.css
+https://faint-area-old.on-fleek.app?content=https%3A%2F%2Fraw.githubusercontent.com%2F1m1-github%2Fitemz%2Fmain%2Fexample%2Fexample_content.json&css=https%3A%2F%2Fraw.githubusercontent.com%2F1m1-github%2Fitemz%2Fmain%2Fexample%2Fexample_css.css
 
 we can add filters if we want to:
-https://little-unit-4743.on.fleek.co?content=https%3A%2F%2Fraw.githubusercontent.com%2F1m1-github%2Fitemz%2Fmain%2Fexample%2Fexample_content.json&css=https%3A%2F%2Fraw.githubusercontent.com%2F1m1-github%2Fitemz%2Fmain%2Fexample%2Fexample_css.css&filters=a,b
+https://faint-area-old.on-fleek.app?content=https%3A%2F%2Fraw.githubusercontent.com%2F1m1-github%2Fitemz%2Fmain%2Fexample%2Fexample_content.json&css=https%3A%2F%2Fraw.githubusercontent.com%2F1m1-github%2Fitemz%2Fmain%2Fexample%2Fexample_css.css&filters=a,b
 
 or a specific item filter via its timestamp:
 https://little-unit-4743.on.fleek.co?content=https%3A%2F%2Fraw.githubusercontent.com%2F1m1-github%2Fitemz%2Fmain%2Fexample%2Fexample_content.json&css=https%3A%2F%2Fraw.githubusercontent.com%2F1m1-github%2Fitemz%2Fmain%2Fexample%2Fexample_css.css&filters=_123920395
